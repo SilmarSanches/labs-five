@@ -40,7 +40,8 @@ func RunTest(url string, totalRequests, concurrency int) {
 			}
 			fmt.Printf("\r[%s] %3d%%", bar, percent)
 		}
-		fmt.Print("\r[██████████████████████████████] 100%\n\n")
+		//fmt.Print("\r[██████████████████████████████] 100%\n\n")
+		fmt.Println()
 	}()
 
 	for range totalRequests {
